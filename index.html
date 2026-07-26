@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRAUSSE | Polos Premium de Algodón Pima Peruano</title>
+  <meta name="description"
+    content="Diseño minimalista, comodidad extrema. Descubre nuestra colección de polos premium fabricados con el mejor algodón Pima peruano. Inspirado en el movimiento y rendimiento.">
+  <link rel="canonical" href="https://AmElL-25.github.io/drausse-web/">
+  <!-- Favicon (logo reloj de arena) -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Crect width='100' height='100' fill='%23000000'/%3E%3Cpath d='M30 20 H70 L50 45 Z' stroke='%23CCFF00' stroke-width='6' stroke-linejoin='round' stroke-linecap='round'/%3E%3Cpath d='M30 80 H70 L50 55 Z' stroke='%23CCFF00' stroke-width='6' stroke-linejoin='round' stroke-linecap='round'/%3E%3Cpath d='M22 88 L78 12' stroke='%23CCFF00' stroke-width='6' stroke-linecap='round'/%3E%3Cpath d='M62 12 H78 V28' stroke='%23CCFF00' stroke-width='6' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DRAUSSE | Polos Premium de Algodón Pima Peruano">
+  <meta property="og:description"
+    content="Diseño minimalista, comodidad extrema. Colección de polos premium fabricados con el mejor algodón Pima peruano.">
+  <meta property="og:image" content="assets/hero-banner.png">
+  <meta property="og:url" content="https://AmElL-25.github.io/drausse-web/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DRAUSSE | Polos Premium de Algodón Pima Peruano">
+  <meta name="twitter:description"
+    content="Diseño minimalista, comodidad extrema. Colección de polos premium fabricados con el mejor algodón Pima peruano.">
+  <meta name="twitter:image" content="assets/hero-banner.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            volt: '#CCFF00',
+            carbon: {
+              50: '#F9FAFB',
+              100: '#F3F4F6',
+              200: '#E5E7EB',
+              300: '#D1D5DB',
+              400: '#9CA3AF',
+              500: '#6B7280',
+              600: '#4B5563',
+              700: '#374151',
+              800: '#1F2937',
+              900: '#111827',
+              950: '#030712'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif'],
+          },
+          animation: {
+            'marquee': 'marquee 25s linear infinite',
+            'fade-in': 'fadeIn 0.6s ease-out forwards',
+            'fade-up': 'fadeInUp 0.8s ease-out forwards',
+            'slide-left': 'slideLeft 0.3s ease-out forwards',
+            'pulse-soft': 'pulseSoft 2s infinite',
+          },
+          keyframes: {
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' }
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' }
+            },
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            slideLeft: {
+              '0%': { transform: 'translateX(100%)' },
+              '100%': { transform: 'translateX(0)' }
+            },
+            pulseSoft: {
+              '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+              '50%': { transform: 'scale(1.05)', opacity: '0.9' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #000000;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #333333;
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #CCFF00;
+    }
+
+    /* Extra utility styles for scroll reveal animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Hover scale for zoom lookup */
+    .product-image-container:hover .product-img {
+      transform: scale(1.05);
+    }
+
+    /* DRAUSSE logo watermark on product polos */
+    .polo-logo-watermark {
+      position: absolute;
+      bottom: 45%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 42px;
+      height: 42px;
+      opacity: 0.18;
+      z-index: 5;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+
+    .product-image-container:hover .polo-logo-watermark {
+      opacity: 0.35;
+    }
+
+    /* Hero large logo animation */
+    .hero-logo-float {
+      animation: heroFloat 6s ease-in-out infinite;
+    }
+
+    @keyframes heroFloat {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-10px) rotate(2deg);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white font-sans overflow-x-hidden">
+
+  <!-- MARQUEE ANNOUNCEMENT BAR -->
+  <div
+    class="bg-black text-white py-2.5 text-xs font-display overflow-hidden whitespace-nowrap border-b border-zinc-900 select-none z-50 relative">
+    <div class="inline-block animate-marquee uppercase tracking-widest space-x-16">
+      <span>⚡ ENVÍO GRATIS EN COMPRAS MAYORES A $50 ⚡</span>
+      <span>💎 100% ALGODÓN PIMA PERUANO PREMIUM 💎</span>
+      <span>🔥 COMPRA HOY Y OBTÉN 10% DE DESCUENTO EN TU PRIMER PEDIDO: DRAUSSE10 🔥</span>
+      <span>⚡ ENVÍO GRATIS EN COMPRAS MAYORES A $50 ⚡</span>
+      <span>💎 100% ALGODÓN PIMA PERUANO PREMIUM 💎</span>
+      <span>🔥 COMPRA HOY Y OBTÉN 10% DE DESCUENTO EN TU PRIMER PEDIDO: DRAUSSE10 🔥</span>
+    </div>
+  </div>
+
+  <!-- NAVIGATION NAVBAR -->
+  <header id="navbar"
+    class="sticky top-0 left-0 w-full z-40 transition-all duration-300 bg-black/95 border-b border-zinc-900 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 h-16 md:h-20 flex items-center justify-between">
+
+      <!-- LOGO -->
+      <a href="#" class="flex items-center gap-2 group">
+        <svg class="w-8 h-8 text-white group-hover:text-volt transition-all duration-300" viewBox="0 0 100 100"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Hourglass top cup -->
+          <path d="M35 25 H65 L50 47 Z" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"
+            stroke-linecap="round" />
+          <!-- Hourglass bottom cup -->
+          <path d="M35 75 H65 L50 53 Z" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"
+            stroke-linecap="round" />
+          <!-- Diagonal arrow -->
+          <path d="M28 82 L72 18" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" />
+          <!-- Arrow tip -->
+          <path d="M58 18 H72 V32" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"
+            stroke-linecap="round" />
+        </svg>
+        <span
+          class="font-display font-black text-xl md:text-2xl tracking-tighter uppercase text-white group-hover:text-volt transition-colors duration-300">DRAUSSE</span>
+      </a>
+
+      <!-- CENTRAL LINKS (DESKTOP) -->
+      <nav class="hidden lg:flex items-center space-x-8 font-display font-bold text-sm tracking-widest uppercase">
+        <a href="#productos" onclick="filterProducts('all')"
+          class="text-zinc-300 hover:text-volt transition-colors duration-200">Todos</a>
+        <a href="#productos" onclick="filterProducts('oversize')"
+          class="text-zinc-300 hover:text-volt transition-colors duration-200">Oversize</a>
+        <a href="#productos" onclick="filterProducts('basicos')"
+          class="text-zinc-300 hover:text-volt transition-colors duration-200">Básicos</a>
+        <a href="#productos" onclick="filterProducts('estampados')"
+          class="text-zinc-300 hover:text-volt transition-colors duration-200">Estampados</a>
+        <a href="#productos" onclick="filterProducts('slim')"
+          class="text-zinc-300 hover:text-volt transition-colors duration-200">Slim Fit</a>
+        <a href="#story" class="text-red-500 hover:text-red-400 transition-colors duration-200 flex items-center gap-1">
+          <span>Pima Tech</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+        </a>
+      </nav>
+
+      <!-- RIGHT ICON MENUS -->
+      <div class="flex items-center space-x-4 md:space-x-6 text-lg text-white">
+        <!-- Search Toggle -->
+        <button id="search-btn" class="hover:text-volt transition-colors duration-200 py-2 focus:outline-none"
+          aria-label="Buscar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <!-- Wishlist -->
+        <button id="wishlist-btn"
+          class="hover:text-volt transition-colors duration-200 py-2 relative focus:outline-none"
+          aria-label="Favoritos">
+          <i class="fa-regular fa-heart"></i>
+          <span id="wishlist-badge"
+            class="absolute -top-1 -right-2 bg-red-500 text-[10px] text-white font-bold w-4 h-4 rounded-full flex items-center justify-center scale-0 transition-transform duration-300">0</span>
+        </button>
+        <!-- Shopping Cart -->
+        <button id="cart-btn" class="hover:text-volt transition-colors duration-200 py-2 relative focus:outline-none"
+          aria-label="Carrito de compras">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span id="cart-badge"
+            class="absolute -top-1 -right-2 bg-volt text-[10px] text-black font-extrabold w-4 h-4 rounded-full flex items-center justify-center scale-0 transition-transform duration-300">0</span>
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn"
+          class="lg:hidden hover:text-volt transition-colors duration-200 py-2 focus:outline-none" aria-label="Menú">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-menu"
+    class="fixed inset-0 z-50 bg-black/98 transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex flex-col p-8 justify-between">
+    <div>
+      <div class="flex justify-between items-center mb-12">
+        <div class="flex items-center gap-2">
+          <svg class="w-7 h-7 text-volt" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M35 25 H65 L50 47 Z" stroke="currentColor" stroke-width="5" stroke-linejoin="round"
+              stroke-linecap="round" />
+            <path d="M35 75 H65 L50 53 Z" stroke="currentColor" stroke-width="5" stroke-linejoin="round"
+              stroke-linecap="round" />
+            <path d="M28 82 L72 18" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
+            <path d="M58 18 H72 V32" stroke="currentColor" stroke-width="5" stroke-linejoin="round"
+              stroke-linecap="round" />
+          </svg>
+          <span class="font-display font-black text-2xl tracking-tighter text-volt">DRAUSSE</span>
+        </div>
+        <button id="close-mobile-menu" class="text-white hover:text-volt text-2xl focus:outline-none">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-6 font-display font-black text-3xl uppercase tracking-wider">
+        <a href="#productos" onclick="toggleMobileMenu(); filterProducts('all')"
+          class="hover:text-volt transition-colors">Todos</a>
+        <a href="#productos" onclick="toggleMobileMenu(); filterProducts('oversize')"
+          class="hover:text-volt transition-colors">Oversize</a>
+        <a href="#productos" onclick="toggleMobileMenu(); filterProducts('basicos')"
+          class="hover:text-volt transition-colors">Básicos</a>
+        <a href="#productos" onclick="toggleMobileMenu(); filterProducts('estampados')"
+          class="hover:text-volt transition-colors">Estampados</a>
+        <a href="#productos" onclick="toggleMobileMenu(); filterProducts('slim')"
+          class="hover:text-volt transition-colors">Slim Fit</a>
+        <a href="#story" onclick="toggleMobileMenu()" class="text-red-500 hover:text-red-400 transition-colors">Pima
+          Tech</a>
+      </nav>
+    </div>
+    <div class="border-t border-zinc-800 pt-8 flex flex-col space-y-4">
+      <div class="flex items-center gap-4 text-zinc-400 text-lg">
+        <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="hover:text-white"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" class="hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p class="text-xs text-zinc-500">© 2026 DRAUSSE INC. TODOS LOS DERECHOS RESERVADOS</p>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section
+    class="relative h-[85vh] md:h-[90vh] flex items-center justify-start overflow-hidden bg-zinc-950 select-none">
+    <!-- Immersive Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img src="assets/hero-banner.png" alt="DRAUSSE Hero Banner"
+        class="w-full h-full object-cover object-center opacity-70 md:opacity-85 transform scale-100 transition-transform duration-1000 ease-out"
+        id="hero-img">
+      <!-- Dark Gradients for Text Contrast -->
+      <div class="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent"></div>
+      <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
+    </div>
+
+    <!-- Content -->
+    <div
+      class="relative z-10 max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row items-center justify-between gap-12 mt-10">
+
+      <!-- Left: Text Content -->
+      <div class="flex flex-col items-start text-left max-w-2xl">
+        <span
+          class="bg-volt text-black text-xs font-display font-black tracking-widest uppercase px-3 py-1 mb-4 animate-fade-in">
+          DISCIPLINA · SUPERACIÓN · ÉXITO
+        </span>
+        <h1
+          class="font-display font-black text-5xl sm:text-6xl md:text-8xl tracking-tighter uppercase leading-[0.9] text-white max-w-3xl mb-6">
+          NO TE<br>RINDAS<br>JAMÁS
+        </h1>
+        <p class="text-zinc-300 text-sm md:text-lg max-w-lg mb-10 font-medium tracking-wide">
+          DRAUSSE nace para vestir a personas que viven el deporte y la vida cotidiana con disciplina, esfuerzo y
+          determinación. Prendas premium diseñadas para quienes avanzan hasta alcanzar sus metas.
+        </p>
+
+        <!-- CTAs with Dynamic Hover -->
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <a href="#productos" onclick="filterProducts('all')"
+            class="bg-white text-black font-display font-bold text-center text-sm uppercase tracking-widest py-4 px-8 border border-white hover:bg-volt hover:border-volt hover:text-black transition-all duration-300 transform hover:-translate-y-1">
+            Comprar Hombre
+          </a>
+          <a href="#productos" onclick="filterProducts('all')"
+            class="bg-transparent text-white font-display font-bold text-center text-sm uppercase tracking-widest py-4 px-8 border border-white hover:bg-white hover:text-black transition-all duration-300 transform hover:-translate-y-1">
+            Comprar Mujer
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Large DRAUSSE Logo -->
+      <div class="hidden md:flex items-center justify-center hero-logo-float">
+        <svg class="w-48 lg:w-64 h-48 lg:h-64 text-white/15" viewBox="0 0 100 100" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 20 H70 L50 45 Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"
+            stroke-linecap="round" fill="currentColor" fill-opacity="0.05" />
+          <path d="M30 80 H70 L50 55 Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"
+            stroke-linecap="round" fill="currentColor" fill-opacity="0.05" />
+          <path d="M22 88 L78 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+          <path d="M62 12 H78 V28" stroke="currentColor" stroke-width="3" stroke-linejoin="round"
+            stroke-linecap="round" />
+          <!-- Small feathered arrows on the diagonal -->
+          <path d="M18 78 L28 88" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path d="M18 88 L28 78" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </div>
+
+    </div>
+
+    <!-- Scrolling Indicator -->
+    <div
+      class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-500 animate-bounce cursor-pointer z-10"
+      onclick="document.getElementById('categorias').scrollIntoView({behavior: 'smooth'})">
+      <span class="text-[10px] font-display uppercase tracking-widest">Desliza</span>
+      <i class="fa-solid fa-chevron-down text-sm"></i>
+    </div>
+  </section>
+
+  <!-- CATEGORIES ASYMMETRIC LOOKBOOK GRID -->
+  <section id="categorias" class="bg-white text-black py-20 px-6 md:px-12 relative overflow-hidden select-none">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Heading -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-zinc-200 pb-6 reveal">
+        <div>
+          <span class="text-xs uppercase tracking-widest font-bold text-zinc-500">LOOKBOOK EDITORIAL</span>
+          <h2 class="font-display font-black text-3xl md:text-5xl uppercase tracking-tighter mt-1">CORTES Y AJUSTES
+            ESENCIALES</h2>
+        </div>
+        <p class="text-zinc-600 max-w-md text-sm mt-4 md:mt-0 font-medium">
+          Diferentes siluetas creadas específicamente para complementar tu estilo urbano, deportivo y diario,
+          manteniendo el mismo estándar de calidad supremo.
+        </p>
+      </div>
+
+      <!-- Asymmetric Editorial Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 select-none reveal">
+
+        <!-- Category Item 1 (Large - Oversize) -->
+        <div
+          class="md:col-span-2 md:row-span-2 relative group overflow-hidden bg-zinc-900 aspect-[4/5] md:aspect-square flex flex-col justify-end p-8 border border-zinc-100">
+          <div class="absolute inset-0">
+            <img src="assets/polo-oversize-front.png" alt="Colección Oversize"
+              class="w-full h-full object-cover object-center transform scale-100 group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          </div>
+          <div class="relative z-10">
+            <span
+              class="bg-volt text-black text-[10px] font-display font-black px-2 py-0.5 tracking-wider uppercase mb-2 inline-block">MÁS
+              POPULAR</span>
+            <h3 class="font-display font-black text-3xl md:text-4xl text-white uppercase tracking-tighter">OVERSIZE</h3>
+            <p class="text-zinc-300 text-xs mt-2 max-w-sm font-medium">Hombros caídos y silueta relajada con caída de
+              gramaje pesado para un estilo streetwear imponente.</p>
+            <a href="#productos" onclick="filterProducts('oversize')"
+              class="mt-4 inline-flex items-center gap-2 bg-white text-black font-display font-bold text-xs uppercase px-5 py-2.5 hover:bg-volt transition-colors tracking-widest">
+              Explorar <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Category Item 2 (Medium - Básicos Esenciales) -->
+        <div
+          class="relative group overflow-hidden bg-zinc-900 aspect-[4/5] md:aspect-auto flex flex-col justify-end p-8 border border-zinc-100">
+          <div class="absolute inset-0">
+            <img src="assets/polo-basic-front.png" alt="Básicos Esenciales"
+              class="w-full h-full object-cover object-center transform scale-100 group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          </div>
+          <div class="relative z-10">
+            <h3 class="font-display font-black text-2xl text-white uppercase tracking-tighter">BÁSICOS</h3>
+            <p class="text-zinc-300 text-xs mt-1 font-medium">Minimalismo puro sin marcas.</p>
+            <a href="#productos" onclick="filterProducts('basicos')"
+              class="mt-4 inline-flex items-center gap-2 bg-white text-black font-display font-bold text-[10px] uppercase px-4 py-2 hover:bg-volt transition-colors tracking-widest">
+              Comprar <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Category Item 3 (Medium - Estampados Gráficos) -->
+        <div
+          class="relative group overflow-hidden bg-zinc-900 aspect-[4/5] md:aspect-auto flex flex-col justify-end p-8 border border-zinc-100">
+          <div class="absolute inset-0">
+            <img src="assets/polo-graphic-front.png" alt="Estampados Gráficos"
+              class="w-full h-full object-cover object-center transform scale-100 group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          </div>
+          <div class="relative z-10">
+            <span
+              class="bg-red-600 text-white text-[9px] font-display font-black px-2 py-0.5 tracking-wider uppercase mb-1 inline-block">EDICIÓN
+              EXCLUSIVA</span>
+            <h3 class="font-display font-black text-2xl text-white uppercase tracking-tighter">GRÁFICOS</h3>
+            <p class="text-zinc-300 text-xs mt-1 font-medium">Diseños audaces de impacto.</p>
+            <a href="#productos" onclick="filterProducts('estampados')"
+              class="mt-4 inline-flex items-center gap-2 bg-white text-black font-display font-bold text-[10px] uppercase px-4 py-2 hover:bg-volt transition-colors tracking-widest">
+              Ver Colección <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Category Item 4 (Horizontal - Slim Fit) -->
+        <div
+          class="md:col-span-2 relative group overflow-hidden bg-zinc-900 aspect-[16/9] md:aspect-auto flex flex-col justify-end p-8 border border-zinc-100">
+          <div class="absolute inset-0">
+            <img src="assets/polo-slim-front.png" alt="Slim Fit"
+              class="w-full h-full object-cover object-center transform scale-100 group-hover:scale-105 transition-transform duration-700 opacity-75 group-hover:opacity-85">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+          </div>
+          <div class="relative z-10">
+            <h3 class="font-display font-black text-2xl md:text-3xl text-white uppercase tracking-tighter">SLIM
+              PERFORMANCE</h3>
+            <p class="text-zinc-300 text-xs mt-1 max-w-sm font-medium">Diseño entallado con elasticidad añadida para
+              realzar la musculatura física y mantener el rendimiento máximo.</p>
+            <a href="#productos" onclick="filterProducts('slim')"
+              class="mt-4 inline-flex items-center gap-2 bg-white text-black font-display font-bold text-xs uppercase px-5 py-2.5 hover:bg-volt transition-colors tracking-widest">
+              Explorar Slim <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS GRID & FILTERS -->
+  <section id="productos" class="bg-black text-white py-24 px-6 md:px-12 border-t border-zinc-900 select-none">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Section Title -->
+      <div class="flex flex-col items-center text-center mb-16 reveal">
+        <span class="text-volt text-xs font-display font-black tracking-widest uppercase mb-2">SELECCIÓN DRAUSSE</span>
+        <h2 class="font-display font-black text-4xl md:text-6xl uppercase tracking-tighter">PRODUCTOS DESTACADOS</h2>
+        <div class="w-16 h-1 bg-volt mt-4"></div>
+      </div>
+
+      <!-- Filters Tab Menu -->
+      <div class="flex flex-wrap justify-center items-center gap-3 mb-12 select-none reveal">
+        <button onclick="filterProducts('all')"
+          class="filter-tab active bg-volt text-black border border-volt px-6 py-2.5 font-display font-bold text-xs uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5">
+          Todos
+        </button>
+        <button onclick="filterProducts('oversize')"
+          class="filter-tab bg-transparent text-white border border-zinc-800 px-6 py-2.5 font-display font-bold text-xs uppercase tracking-wider transition-all duration-300 hover:border-white hover:text-white hover:-translate-y-0.5">
+          Oversize
+        </button>
+        <button onclick="filterProducts('basicos')"
+          class="filter-tab bg-transparent text-white border border-zinc-800 px-6 py-2.5 font-display font-bold text-xs uppercase tracking-wider transition-all duration-300 hover:border-white hover:text-white hover:-translate-y-0.5">
+          Básicos
+        </button>
+        <button onclick="filterProducts('estampados')"
+          class="filter-tab bg-transparent text-white border border-zinc-800 px-6 py-2.5 font-display font-bold text-xs uppercase tracking-wider transition-all duration-300 hover:border-white hover:text-white hover:-translate-y-0.5">
+          Estampados
+        </button>
+        <button onclick="filterProducts('slim')"
+          class="filter-tab bg-transparent text-white border border-zinc-800 px-6 py-2.5 font-display font-bold text-xs uppercase tracking-wider transition-all duration-300 hover:border-white hover:text-white hover:-translate-y-0.5">
+          Slim Fit
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8 reveal">
+
+        <!-- CARD 1 (Oversize Black) -->
+        <div class="product-card group flex flex-col justify-between" data-category="oversize">
+          <div
+            class="product-image-container relative bg-zinc-950 aspect-[3/4] overflow-hidden border border-zinc-900 flex items-center justify-center">
+            <!-- Badges -->
+            <span
+              class="absolute top-4 left-4 z-10 bg-volt text-black text-[9px] font-display font-black px-2 py-0.5 tracking-wider uppercase">NUEVO</span>
+            <!-- Wishlist Heart -->
+            <button
+              class="wishlist-toggle absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-black/60 border border-zinc-800 hover:bg-black hover:border-white flex items-center justify-center text-sm text-white transition-colors focus:outline-none"
+              onclick="toggleWishlist(1, this, 'Polo Oversize Black')">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <!-- Images swap -->
+            <img src="assets/polo-oversize-front.png" alt="Polo DRAUSSE Oversize Black"
+              class="product-img w-full h-full object-cover object-center absolute inset-0 transition-transform duration-500 z-0">
+            <img src="assets/polo-oversize-back.png" alt="Polo DRAUSSE Oversize Black Detalle"
+              class="product-img-hover w-full h-full object-cover object-center absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-0">
+            <!-- DRAUSSE Logo Watermark on polo -->
+            <svg class="polo-logo-watermark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30 20 H70 L50 45 Z" stroke="white" stroke-width="4" stroke-linejoin="round"
+                stroke-linecap="round" />
+              <path d="M30 80 H70 L50 55 Z" stroke="white" stroke-width="4" stroke-linejoin="round"
+                stroke-linecap="round" />
+              <path d="M22 88 L78 12" stroke="white" stroke-width="4" stroke-linecap="round" />
+              <path d="M62 12 H78 V28" stroke="white" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+            </svg>
+
+            <!-- Quick Size Selector Overlay -->
+            <div
+              class="absolute inset-x-0 bottom-0 bg-black/80 backdrop-blur-sm border-t border-zinc-800 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20 flex flex-col items-center">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-400 mb-2">Selecciona tu
+                talla</span>
+              <div class="flex gap-2">
+                <button onclick="selectSize(this, 1)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">S</button>
+                <button onclick="selectSize(this, 1)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">M</button>
+                <button onclick="selectSize(this, 1)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">L</button>
+                <button onclick="selectSize(this, 1)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">XL</button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-col">
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="font-display font-black text-lg uppercase tracking-tight text-white">DRAUSSE Heavy Oversize
+                </h3>
+                <p class="text-zinc-500 text-xs font-medium">100% Algodón Pima Peruano • 240g</p>
+              </div>
+              <span class="font-display font-extrabold text-volt text-lg">$39.99</span>
+            </div>
+            <button onclick="addToCart(1, 'DRAUSSE Heavy Oversize', 39.99, 'assets/polo-oversize-front.png')"
+              class="add-to-cart-btn mt-4 w-full bg-zinc-900 text-white hover:bg-volt hover:text-black font-display font-bold py-3 text-xs uppercase tracking-widest border border-zinc-800 hover:border-volt transition-colors flex items-center justify-center gap-2">
+              <i class="fa-solid fa-plus text-xs"></i> Añadir al Carrito
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 2 (Básicos White) -->
+        <div class="product-card group flex flex-col justify-between" data-category="basicos">
+          <div
+            class="product-image-container relative bg-zinc-950 aspect-[3/4] overflow-hidden border border-zinc-900 flex items-center justify-center">
+            <span
+              class="absolute top-4 left-4 z-10 bg-zinc-800 text-white text-[9px] font-display font-black px-2 py-0.5 tracking-wider uppercase">MÁS
+              VENDIDO</span>
+            <button
+              class="wishlist-toggle absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-black/60 border border-zinc-800 hover:bg-black hover:border-white flex items-center justify-center text-sm text-white transition-colors focus:outline-none"
+              onclick="toggleWishlist(2, this, 'Polo Classic Basic White')">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="assets/polo-basic-front.png" alt="Polo Classic Basic White"
+              class="product-img w-full h-full object-cover object-center absolute inset-0 transition-transform duration-500 z-0">
+            <img src="assets/polo-basic-back.png" alt="Polo Classic Basic White Detalle"
+              class="product-img-hover w-full h-full object-cover object-center absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-0">
+            <svg class="polo-logo-watermark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30 20 H70 L50 45 Z" stroke="#333" stroke-width="4" stroke-linejoin="round"
+                stroke-linecap="round" />
+              <path d="M30 80 H70 L50 55 Z" stroke="#333" stroke-width="4" stroke-linejoin="round"
+                stroke-linecap="round" />
+              <path d="M22 88 L78 12" stroke="#333" stroke-width="4" stroke-linecap="round" />
+              <path d="M62 12 H78 V28" stroke="#333" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+            </svg>
+
+            <div
+              class="absolute inset-x-0 bottom-0 bg-black/80 backdrop-blur-sm border-t border-zinc-800 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20 flex flex-col items-center">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-400 mb-2">Selecciona tu
+                talla</span>
+              <div class="flex gap-2">
+                <button onclick="selectSize(this, 2)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">S</button>
+                <button onclick="selectSize(this, 2)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">M</button>
+                <button onclick="selectSize(this, 2)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">L</button>
+                <button onclick="selectSize(this, 2)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">XL</button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-col">
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="font-display font-black text-lg uppercase tracking-tight text-white">Classic Pima Basic</h3>
+                <p class="text-zinc-500 text-xs font-medium">100% Algodón Pima Peruano • Ajuste Regular</p>
+              </div>
+              <span class="font-display font-extrabold text-volt text-lg">$34.99</span>
+            </div>
+            <button onclick="addToCart(2, 'Classic Pima Basic', 34.99, 'assets/polo-basic-front.png')"
+              class="add-to-cart-btn mt-4 w-full bg-zinc-900 text-white hover:bg-volt hover:text-black font-display font-bold py-3 text-xs uppercase tracking-widest border border-zinc-800 hover:border-volt transition-colors flex items-center justify-center gap-2">
+              <i class="fa-solid fa-plus text-xs"></i> Añadir al Carrito
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 3 (Estampados Graphic) -->
+        <div class="product-card group flex flex-col justify-between" data-category="estampados">
+          <div
+            class="product-image-container relative bg-zinc-950 aspect-[3/4] overflow-hidden border border-zinc-900 flex items-center justify-center">
+            <span
+              class="absolute top-4 left-4 z-10 bg-red-600 text-white text-[9px] font-display font-black px-2 py-0.5 tracking-wider uppercase">LIMITADO</span>
+            <button
+              class="wishlist-toggle absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-black/60 border border-zinc-800 hover:bg-black hover:border-white flex items-center justify-center text-sm text-white transition-colors focus:outline-none"
+              onclick="toggleWishlist(3, this, 'Polo Graphic Street Dark')">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="assets/polo-graphic-front.png" alt="Polo Graphic Street Dark"
+              class="product-img w-full h-full object-cover object-center absolute inset-0 transition-transform duration-500 z-0">
+            <img src="assets/polo-graphic-back.png" alt="Polo Graphic Street Dark Detalle"
+              class="product-img-hover w-full h-full object-cover object-center absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-0">
+            <svg class="polo-logo-watermark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30 20 H70 L50 45 Z" stroke="white" stroke-width="4" stroke-linejoin="round"
+                stroke-linecap="round" />
+              <path d="M30 80 H70 L50 55 Z" stroke="white" stroke-width="4" stroke-linejoin="round"
+                stroke-linecap="round" />
+              <path d="M22 88 L78 12" stroke="white" stroke-width="4" stroke-linecap="round" />
+              <path d="M62 12 H78 V28" stroke="white" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+            </svg>
+
+            <div
+              class="absolute inset-x-0 bottom-0 bg-black/80 backdrop-blur-sm border-t border-zinc-800 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20 flex flex-col items-center">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-400 mb-2">Selecciona tu
+                talla</span>
+              <div class="flex gap-2">
+                <button onclick="selectSize(this, 3)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">S</button>
+                <button onclick="selectSize(this, 3)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">M</button>
+                <button onclick="selectSize(this, 3)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">L</button>
+                <button onclick="selectSize(this, 3)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">XL</button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-col">
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="font-display font-black text-lg uppercase tracking-tight text-white">Graphic Street Dark</h3>
+                <p class="text-zinc-500 text-xs font-medium">100% Algodón Pima Peruano • Arte Impreso</p>
+              </div>
+              <span class="font-display font-extrabold text-volt text-lg">$42.99</span>
+            </div>
+            <button onclick="addToCart(3, 'Graphic Street Dark', 42.99, 'assets/polo-graphic-front.png')"
+              class="add-to-cart-btn mt-4 w-full bg-zinc-900 text-white hover:bg-volt hover:text-black font-display font-bold py-3 text-xs uppercase tracking-widest border border-zinc-800 hover:border-volt transition-colors flex items-center justify-center gap-2">
+              <i class="fa-solid fa-plus text-xs"></i> Añadir al Carrito
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 4 (Slim Fit Olive) -->
+        <div class="product-card group flex flex-col justify-between" data-category="slim">
+          <div
+            class="product-image-container relative bg-zinc-950 aspect-[3/4] overflow-hidden border border-zinc-900 flex items-center justify-center">
+            <span
+              class="absolute top-4 left-4 z-10 bg-volt text-black text-[9px] font-display font-black px-2 py-0.5 tracking-wider uppercase">RENDIMIENTO</span>
+            <button
+              class="wishlist-toggle absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-black/60 border border-zinc-800 hover:bg-black hover:border-white flex items-center justify-center text-sm text-white transition-colors focus:outline-none"
+              onclick="toggleWishlist(4, this, 'Polo Performance Slim Olive')">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="assets/polo-slim-front.png" alt="Polo Performance Slim Olive"
+              class="product-img w-full h-full object-cover object-center absolute inset-0 transition-transform duration-500 z-0">
+            <img src="assets/polo-slim-back.png" alt="Polo Performance Slim Olive Detalle"
+              class="product-img-hover w-full h-full object-cover object-center absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-0">
+            <svg class="polo-logo-watermark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30 20 H70 L50 45 Z" stroke="#333" stroke-width="4" stroke-linejoin="round"
+                stroke-linecap="round" />
+              <path d="M30 80 H70 L50 55 Z" stroke="#333" stroke-width="4" stroke-linejoin="round"
+                stroke-linecap="round" />
+              <path d="M22 88 L78 12" stroke="#333" stroke-width="4" stroke-linecap="round" />
+              <path d="M62 12 H78 V28" stroke="#333" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+            </svg>
+
+            <div
+              class="absolute inset-x-0 bottom-0 bg-black/80 backdrop-blur-sm border-t border-zinc-800 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20 flex flex-col items-center">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-400 mb-2">Selecciona tu
+                talla</span>
+              <div class="flex gap-2">
+                <button onclick="selectSize(this, 4)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">S</button>
+                <button onclick="selectSize(this, 4)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">M</button>
+                <button onclick="selectSize(this, 4)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">L</button>
+                <button onclick="selectSize(this, 4)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">XL</button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-col">
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="font-display font-black text-lg uppercase tracking-tight text-white">Performance Slim Olive
+                </h3>
+                <p class="text-zinc-500 text-xs font-medium">95% Algodón Pima / 5% Spandex • Athleisure</p>
+              </div>
+              <span class="font-display font-extrabold text-volt text-lg">$37.99</span>
+            </div>
+            <button onclick="addToCart(4, 'Performance Slim Olive', 37.99, 'assets/polo-slim-front.png')"
+              class="add-to-cart-btn mt-4 w-full bg-zinc-900 text-white hover:bg-volt hover:text-black font-display font-bold py-3 text-xs uppercase tracking-widest border border-zinc-800 hover:border-volt transition-colors flex items-center justify-center gap-2">
+              <i class="fa-solid fa-plus text-xs"></i> Añadir al Carrito
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 5 (Oversize Black V2) -->
+        <div class="product-card group flex flex-col justify-between" data-category="oversize">
+          <div
+            class="product-image-container relative bg-zinc-950 aspect-[3/4] overflow-hidden border border-zinc-900 flex items-center justify-center">
+            <span
+              class="absolute top-4 left-4 z-10 bg-zinc-900 text-volt text-[9px] font-display font-black px-2 py-0.5 tracking-wider uppercase border border-volt">EDICIÓN
+              CORE</span>
+            <button
+              class="wishlist-toggle absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-black/60 border border-zinc-800 hover:bg-black hover:border-white flex items-center justify-center text-sm text-white transition-colors focus:outline-none"
+              onclick="toggleWishlist(5, this, 'Polo Oversize Charcoal')">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="assets/polo-oversize-front.png" alt="Polo DRAUSSE Oversize Charcoal"
+              class="product-img w-full h-full object-cover object-center absolute inset-0 transition-transform duration-500 z-0 brightness-75">
+            <img src="assets/polo-oversize-back.png" alt="Polo DRAUSSE Oversize Charcoal Detalle"
+              class="product-img-hover w-full h-full object-cover object-center absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-0 brightness-75">
+            <svg class="polo-logo-watermark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30 20 H70 L50 45 Z" stroke="white" stroke-width="4" stroke-linejoin="round"
+                stroke-linecap="round" />
+              <path d="M30 80 H70 L50 55 Z" stroke="white" stroke-width="4" stroke-linejoin="round"
+                stroke-linecap="round" />
+              <path d="M22 88 L78 12" stroke="white" stroke-width="4" stroke-linecap="round" />
+              <path d="M62 12 H78 V28" stroke="white" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+            </svg>
+
+            <div
+              class="absolute inset-x-0 bottom-0 bg-black/80 backdrop-blur-sm border-t border-zinc-800 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20 flex flex-col items-center">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-400 mb-2">Selecciona tu
+                talla</span>
+              <div class="flex gap-2">
+                <button onclick="selectSize(this, 5)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">S</button>
+                <button onclick="selectSize(this, 5)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">M</button>
+                <button onclick="selectSize(this, 5)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">L</button>
+                <button onclick="selectSize(this, 5)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">XL</button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-col">
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="font-display font-black text-lg uppercase tracking-tight text-white">DRAUSSE Oversize
+                  Charcoal</h3>
+                <p class="text-zinc-500 text-xs font-medium">100% Algodón Pima Peruano • Carbón Lavado</p>
+              </div>
+              <span class="font-display font-extrabold text-volt text-lg">$39.99</span>
+            </div>
+            <button onclick="addToCart(5, 'DRAUSSE Oversize Charcoal', 39.99, 'assets/polo-oversize-front.png')"
+              class="add-to-cart-btn mt-4 w-full bg-zinc-900 text-white hover:bg-volt hover:text-black font-display font-bold py-3 text-xs uppercase tracking-widest border border-zinc-800 hover:border-volt transition-colors flex items-center justify-center gap-2">
+              <i class="fa-solid fa-plus text-xs"></i> Añadir al Carrito
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 6 (Estampados Graphic Volt) -->
+        <div class="product-card group flex flex-col justify-between" data-category="estampados">
+          <div
+            class="product-image-container relative bg-zinc-950 aspect-[3/4] overflow-hidden border border-zinc-900 flex items-center justify-center">
+            <span
+              class="absolute top-4 left-4 z-10 bg-zinc-800 text-volt text-[9px] font-display font-black px-2 py-0.5 tracking-wider uppercase">TECNOLOGÍA</span>
+            <button
+              class="wishlist-toggle absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-black/60 border border-zinc-800 hover:bg-black hover:border-white flex items-center justify-center text-sm text-white transition-colors focus:outline-none"
+              onclick="toggleWishlist(6, this, 'Polo Graphic Volt Active')">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="assets/polo-graphic-front.png" alt="Polo Graphic Volt Active"
+              class="product-img w-full h-full object-cover object-center absolute inset-0 transition-transform duration-500 z-0 brightness-110">
+            <img src="assets/polo-graphic-back.png" alt="Polo Graphic Volt Active Detalle"
+              class="product-img-hover w-full h-full object-cover object-center absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-0 brightness-110">
+            <svg class="polo-logo-watermark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30 20 H70 L50 45 Z" stroke="white" stroke-width="4" stroke-linejoin="round"
+                stroke-linecap="round" />
+              <path d="M30 80 H70 L50 55 Z" stroke="white" stroke-width="4" stroke-linejoin="round"
+                stroke-linecap="round" />
+              <path d="M22 88 L78 12" stroke="white" stroke-width="4" stroke-linecap="round" />
+              <path d="M62 12 H78 V28" stroke="white" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+            </svg>
+
+            <div
+              class="absolute inset-x-0 bottom-0 bg-black/80 backdrop-blur-sm border-t border-zinc-800 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20 flex flex-col items-center">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-400 mb-2">Selecciona tu
+                talla</span>
+              <div class="flex gap-2">
+                <button onclick="selectSize(this, 6)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">S</button>
+                <button onclick="selectSize(this, 6)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">M</button>
+                <button onclick="selectSize(this, 6)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">L</button>
+                <button onclick="selectSize(this, 6)"
+                  class="size-btn border border-zinc-700 text-zinc-300 hover:border-white hover:text-white px-3 py-1 text-xs font-bold transition-all focus:outline-none">XL</button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-col">
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="font-display font-black text-lg uppercase tracking-tight text-white">Graphic Volt Active</h3>
+                <p class="text-zinc-500 text-xs font-medium">100% Algodón Pima Peruano • Neon Print</p>
+              </div>
+              <span class="font-display font-extrabold text-volt text-lg">$45.99</span>
+            </div>
+            <button onclick="addToCart(6, 'Graphic Volt Active', 45.99, 'assets/polo-graphic-front.png')"
+              class="add-to-cart-btn mt-4 w-full bg-zinc-900 text-white hover:bg-volt hover:text-black font-display font-bold py-3 text-xs uppercase tracking-widest border border-zinc-800 hover:border-volt transition-colors flex items-center justify-center gap-2">
+              <i class="fa-solid fa-plus text-xs"></i> Añadir al Carrito
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STORYTELLING: NUESTRA ESENCIA DRAUSSE -->
+  <section id="story" class="bg-zinc-950 text-white py-24 px-6 md:px-12 border-t border-zinc-900 select-none">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Brand Manifesto Header -->
+      <div class="text-center mb-20 reveal">
+        <div class="flex items-center justify-center gap-3 mb-4">
+          <svg class="w-10 h-10 text-volt" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 20 H70 L50 45 Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"
+              stroke-linecap="round" />
+            <path d="M30 80 H70 L50 55 Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"
+              stroke-linecap="round" />
+            <path d="M22 88 L78 12" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            <path d="M62 12 H78 V28" stroke="currentColor" stroke-width="4" stroke-linejoin="round"
+              stroke-linecap="round" />
+          </svg>
+          <span class="text-volt text-xs font-display font-black tracking-widest uppercase">NUESTRA ESENCIA</span>
+        </div>
+        <h2 class="font-display font-black text-4xl md:text-6xl uppercase tracking-tighter leading-none mb-4">
+          DISCIPLINA. SUPERACIÓN.<br><span class="text-volt">ÉXITO.</span>
+        </h2>
+        <p class="text-zinc-400 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
+          DRAUSSE es el símbolo de quienes se desafían a sí mismos en el deporte, los estudios y en la vida misma. No se
+          rinden y avanzan hasta alcanzar sus metas.
+        </p>
+      </div>
+
+      <!-- Two-Column: Brand Story + Values -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <!-- Left Column: Visual with Logo -->
+        <div class="relative reveal">
+          <div class="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-volt z-10"></div>
+          <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-volt z-10"></div>
+          <div class="bg-zinc-900 border border-zinc-800 p-3 shadow-2xl relative overflow-hidden">
+            <img src="assets/polo-basic-back.png" alt="Detalle Algodón Pima DRAUSSE"
+              class="w-full object-cover aspect-[4/3] brightness-90">
+            <!-- Large centered logo overlay -->
+            <div class="absolute inset-0 flex items-center justify-center">
+              <svg class="w-32 h-32 text-white/15" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 20 H70 L50 45 Z" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"
+                  stroke-linecap="round" fill="currentColor" fill-opacity="0.05" />
+                <path d="M30 80 H70 L50 55 Z" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"
+                  stroke-linecap="round" fill="currentColor" fill-opacity="0.05" />
+                <path d="M22 88 L78 12" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" />
+                <path d="M62 12 H78 V28" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+          <div class="absolute bottom-6 left-6 bg-black/90 backdrop-blur-sm border border-zinc-800 p-4 max-w-xs">
+            <span class="text-volt font-display font-black text-xs tracking-widest uppercase">NUESTRA MISIÓN</span>
+            <p class="text-zinc-300 text-xs mt-1 leading-relaxed">
+              Creamos prendas deportivas y sport con diseño premium, comodidad y carácter, para acompañar a personas que
+              viven con energía y actitud.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Column: Brand Values -->
+        <div class="flex flex-col justify-center reveal">
+          <span class="text-volt text-xs font-display font-black tracking-widest uppercase mb-2">LO QUE NOS
+            DEFINE</span>
+          <h2 class="font-display font-black text-4xl md:text-5xl uppercase tracking-tighter mb-6 leading-none">
+            MOVIMIENTO<br>Y CARÁCTER
+          </h2>
+          <p class="text-zinc-400 text-sm md:text-base leading-relaxed mb-8">
+            En DRAUSSE aspiramos ser una marca líder en ropa deportiva y sport premium, reconocida por su alta calidad,
+            estilo, comodidad e inspiración al éxito personal, dentro y fuera del deporte. Cada prenda representa
+            disciplina, superación y éxito.
+          </p>
+
+          <!-- Brand Pillars -->
+          <div class="space-y-6">
+            <div class="flex gap-4 items-start">
+              <div
+                class="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-volt flex-shrink-0">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-sm uppercase tracking-wider text-white">Disciplina en Cada
+                  Detalle</h3>
+                <p class="text-zinc-400 text-xs mt-1">
+                  Desde la selección de fibras premium hasta las costuras de refuerzo, cada polo es el resultado de un
+                  proceso riguroso sin atajos.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div
+                class="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-volt flex-shrink-0">
+                <i class="fa-solid fa-mountain-sun"></i>
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-sm uppercase tracking-wider text-white">Superación Constante</h3>
+                <p class="text-zinc-400 text-xs mt-1">
+                  Diseñadas para quienes se levantan temprano, entrenan duro y buscan ser la mejor versión de sí mismos
+                  cada día.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div
+                class="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-volt flex-shrink-0">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-sm uppercase tracking-wider text-white">Éxito como Estilo de Vida
+                </h3>
+                <p class="text-zinc-400 text-xs mt-1">
+                  DRAUSSE no es solo ropa: es la actitud de quienes no se rinden. Un símbolo de identidad para los que
+                  avanzan hasta alcanzar sus metas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SIGNUP -->
+  <section class="bg-volt text-black py-20 px-6 md:px-12 select-none text-center">
+    <div class="max-w-3xl mx-auto flex flex-col items-center">
+      <span class="text-black font-display font-black text-xs tracking-widest uppercase mb-2">ÚNETE A LA LEGIÓN</span>
+      <h2 class="font-display font-black text-3xl md:text-5xl uppercase tracking-tighter mb-4">RECIBE UN 10% DE
+        DESCUENTO</h2>
+      <p class="text-black/80 text-sm max-w-lg mb-8 font-medium">
+        Suscríbete a nuestro boletín para acceder a lanzamientos exclusivos de colecciones limitadas antes que nadie y
+        obtén un código de descuento instantáneo.
+      </p>
+
+      <!-- Signup Form -->
+      <form id="newsletter-form" class="w-full max-w-md flex flex-col sm:flex-row gap-2"
+        onsubmit="handleNewsletterSubmit(event)">
+        <input type="email" placeholder="Ingresa tu correo electrónico" required
+          class="bg-black text-white px-5 py-4 w-full text-sm font-semibold tracking-wide border border-black focus:outline-none focus:border-black placeholder-zinc-500">
+        <button type="submit"
+          class="bg-black text-volt hover:bg-zinc-900 font-display font-bold text-xs uppercase tracking-widest px-8 py-4 sm:py-0 border border-black transition-colors whitespace-nowrap">
+          Suscribirme
+        </button>
+      </form>
+      <p id="newsletter-success" class="text-black font-display font-bold text-sm mt-4 hidden animate-fade-in">
+        <i class="fa-solid fa-circle-check"></i> ¡Suscrito con éxito! Revisa tu correo por tu código de 10% de
+        descuento.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-zinc-950 text-zinc-500 py-16 px-6 md:px-12 border-t border-zinc-900 select-none">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+
+      <!-- Footer Brand Info -->
+      <div class="flex flex-col space-y-4">
+        <a href="#" class="flex items-center gap-2 group">
+          <svg class="w-6 h-6 text-white group-hover:text-volt transition-all duration-300" viewBox="0 0 100 100"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M35 25 H65 L50 47 Z" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"
+              stroke-linecap="round" />
+            <path d="M35 75 H65 L50 53 Z" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"
+              stroke-linecap="round" />
+            <path d="M28 82 L72 18" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" />
+            <path d="M58 18 H72 V32" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"
+              stroke-linecap="round" />
+          </svg>
+          <span
+            class="font-display font-black text-xl text-white tracking-tighter uppercase group-hover:text-volt transition-colors duration-300">DRAUSSE</span>
+        </a>
+        <p class="text-xs text-zinc-600 leading-relaxed mt-2">
+          Diseño e innovación deportiva en siluetas icónicas de algodón Pima. Comprometidos con el desarrollo del diseño
+          textil urbano premium.
+        </p>
+        <div class="flex space-x-4 text-zinc-400 text-lg">
+          <a href="#" class="hover:text-volt transition-colors"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="hover:text-volt transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="hover:text-volt transition-colors"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="hover:text-volt transition-colors"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <!-- Links Column 1: Comprar -->
+      <div>
+        <h4 class="font-display font-bold text-xs text-white uppercase tracking-widest mb-4">Comprar</h4>
+        <ul class="space-y-2 text-xs font-semibold">
+          <li><a href="#productos" onclick="filterProducts('all')" class="hover:text-white transition-colors">Ver
+              Todo</a></li>
+          <li><a href="#productos" onclick="filterProducts('oversize')"
+              class="hover:text-white transition-colors">Colección Oversize</a></li>
+          <li><a href="#productos" onclick="filterProducts('basicos')"
+              class="hover:text-white transition-colors">Básicos Esenciales</a></li>
+          <li><a href="#productos" onclick="filterProducts('slim')" class="hover:text-white transition-colors">Slim
+              Performance</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column 2: Ayuda -->
+      <div>
+        <h4 class="font-display font-bold text-xs text-white uppercase tracking-widest mb-4">Ayuda / Soporte</h4>
+        <ul class="space-y-2 text-xs font-semibold">
+          <li><a href="#" class="hover:text-white transition-colors">Estado de mi pedido</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Envíos y Entregas</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Devoluciones y Cambios</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Preguntas Frecuentes (FAQ)</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column 3: Métodos de Pago -->
+      <div>
+        <h4 class="font-display font-bold text-xs text-white uppercase tracking-widest mb-4">Métodos Aceptados</h4>
+        <div class="grid grid-cols-4 gap-2 text-xl text-zinc-400">
+          <div class="bg-zinc-900 border border-zinc-800 p-2 flex items-center justify-center rounded"><i
+              class="fa-brands fa-cc-visa"></i></div>
+          <div class="bg-zinc-900 border border-zinc-800 p-2 flex items-center justify-center rounded"><i
+              class="fa-brands fa-cc-mastercard"></i></div>
+          <div class="bg-zinc-900 border border-zinc-800 p-2 flex items-center justify-center rounded"><i
+              class="fa-brands fa-cc-paypal"></i></div>
+          <div class="bg-zinc-900 border border-zinc-800 p-2 flex items-center justify-center rounded"><i
+              class="fa-brands fa-apple-pay"></i></div>
+        </div>
+        <p class="text-[10px] text-zinc-600 mt-4">Transacciones encriptadas de extremo a extremo con pasarelas de pago
+          seguras SSL de nivel bancario.</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom Footer Row -->
+    <div
+      class="max-w-7xl mx-auto border-t border-zinc-900 pt-8 flex flex-col md:flex-row items-center justify-between text-[10px] text-zinc-700">
+      <p>© 2026 DRAUSSE INC. TODOS LOS DERECHOS RESERVADOS. CREADO POR UN EXPERTO EN E-COMMERCE.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0 font-bold">
+        <a href="#" class="hover:text-zinc-500">Términos de Servicio</a>
+        <a href="#" class="hover:text-zinc-500">Políticas de Privacidad</a>
+        <a href="#" class="hover:text-zinc-500">Términos de Envío</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SEARCH OVERLAY MODAL -->
+  <div id="search-modal"
+    class="fixed inset-0 z-50 bg-black/98 transform -translate-y-full transition-transform duration-300 ease-in-out flex flex-col justify-start pt-24 px-6 md:px-12">
+    <div class="max-w-4xl mx-auto w-full">
+      <div class="flex justify-between items-center mb-16">
+        <span class="font-display font-black text-2xl tracking-tighter text-volt">DRAUSSE BUSCADOR</span>
+        <button id="close-search-btn" class="text-white hover:text-volt text-3xl focus:outline-none">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Input -->
+      <div class="relative mb-8">
+        <input type="text" id="search-input" placeholder="Buscar por corte, colección o tejido..."
+          class="w-full bg-transparent border-b-2 border-zinc-800 focus:border-volt text-2xl md:text-4xl text-white font-display font-black focus:outline-none pb-4 placeholder-zinc-800 uppercase tracking-tighter"
+          oninput="handleSearch(this.value)">
+        <i class="fa-solid fa-magnifying-glass absolute right-4 bottom-6 text-2xl text-zinc-600"></i>
+      </div>
+
+      <!-- Quick Links & Results -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-500">Enlaces Rápidos</span>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <button onclick="setSearchValue('Oversize')"
+              class="bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-white font-bold text-xs uppercase px-4 py-2">Oversize</button>
+            <button onclick="setSearchValue('Basic')"
+              class="bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-white font-bold text-xs uppercase px-4 py-2">Básicos</button>
+            <button onclick="setSearchValue('Street')"
+              class="bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-white font-bold text-xs uppercase px-4 py-2">Gráficos</button>
+            <button onclick="setSearchValue('Slim')"
+              class="bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-white font-bold text-xs uppercase px-4 py-2">Slim
+              Fit</button>
+          </div>
+        </div>
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-500">Resultados Directos</span>
+          <div id="search-results-list" class="mt-4 flex flex-col space-y-4 max-h-[300px] overflow-y-auto pr-2">
+            <p class="text-xs text-zinc-600">Escribe algo en la barra de búsqueda para ver resultados instantáneos...
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SHOPPING CART DRAWERS SIDEBAR -->
+  <div id="cart-drawer"
+    class="fixed top-0 right-0 h-full w-full max-w-md bg-black border-l border-zinc-900 text-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col justify-between">
+
+    <!-- Drawer Header -->
+    <div class="p-6 border-b border-zinc-900 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-bag-shopping text-volt text-lg"></i>
+        <h3 class="font-display font-black text-lg uppercase tracking-tight">Tu Carrito</h3>
+        <span id="cart-count-drawer" class="text-xs bg-zinc-900 text-zinc-400 px-2 py-0.5 rounded font-bold">0
+          Items</span>
+      </div>
+      <button id="close-cart-btn" class="text-white hover:text-volt text-2xl focus:outline-none">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Free Shipping Goal Tracker -->
+    <div class="bg-zinc-950 px-6 py-4 border-b border-zinc-900">
+      <div class="flex justify-between items-center text-xs font-bold mb-2">
+        <span id="shipping-tracker-title">Faltan $50.00 para envío gratis</span>
+        <span id="shipping-tracker-percent">0%</span>
+      </div>
+      <div class="w-full bg-zinc-900 h-2 rounded-full overflow-hidden">
+        <div id="shipping-tracker-bar" class="bg-volt h-full w-0 transition-all duration-500"></div>
+      </div>
+    </div>
+
+    <!-- Scrollable Items Area -->
+    <div id="cart-items-container" class="flex-grow p-6 overflow-y-auto space-y-6">
+      <!-- Empty Cart Message -->
+      <div id="cart-empty-message" class="flex flex-col items-center justify-center h-full text-center space-y-4">
+        <i class="fa-solid fa-bag-shopping text-zinc-800 text-6xl"></i>
+        <div>
+          <h4 class="font-display font-bold text-sm uppercase text-white">Tu carrito está vacío</h4>
+          <p class="text-zinc-600 text-xs mt-1 max-w-[200px]">Añade tus polos preferidos y comienza tu experiencia
+            DRAUSSE.</p>
+        </div>
+        <button onclick="toggleCart(); document.getElementById('productos').scrollIntoView({behavior: 'smooth'})"
+          class="bg-white text-black font-display font-bold text-xs uppercase px-5 py-2.5 tracking-widest hover:bg-volt transition-colors">Comprar
+          Ahora</button>
+      </div>
+      <!-- Items will load dynamically here -->
+    </div>
+
+    <!-- Cart Drawer Footer -->
+    <div class="p-6 border-t border-zinc-900 bg-zinc-950 space-y-4">
+      <div class="flex justify-between items-center text-sm font-bold">
+        <span class="text-zinc-500 uppercase tracking-widest">Subtotal</span>
+        <span id="cart-subtotal" class="font-display font-black text-white text-lg">$0.00</span>
+      </div>
+      <div class="flex justify-between items-center text-xs font-semibold text-zinc-600">
+        <span>Costo de Envío</span>
+        <span id="cart-shipping-cost">Calculado en el checkout</span>
+      </div>
+      <button id="checkout-btn" onclick="simulateCheckout()"
+        class="w-full bg-volt text-black hover:bg-white hover:text-black font-display font-black py-4 text-xs uppercase tracking-widest transition-colors flex items-center justify-center gap-2">
+        Proceder al Pago <i class="fa-solid fa-arrow-right-long"></i>
+      </button>
+      <p class="text-[10px] text-zinc-600 text-center">Impuestos y descuentos aplicables en el siguiente paso.</p>
+    </div>
+  </div>
+
+  <!-- CHECKOUT SUCCESS MODAL -->
+  <div id="checkout-modal" class="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-6 hidden">
+    <div
+      class="bg-zinc-950 border border-zinc-800 p-8 max-w-md w-full text-center space-y-6 flex flex-col items-center">
+      <div
+        class="w-20 h-20 rounded-full bg-volt/10 flex items-center justify-center border-2 border-volt animate-pulse-soft">
+        <i class="fa-solid fa-check text-volt text-4xl"></i>
+      </div>
+      <h3 class="font-display font-black text-2xl uppercase tracking-tighter text-white">¡PEDIDO RECIBIDO CON ÉXITO!
+      </h3>
+      <p class="text-zinc-400 text-xs leading-relaxed">
+        Tu simulación de pago ha sido procesada de manera correcta. Hemos enviado un correo con los detalles de envío y
+        tu factura electrónica. ¡Gracias por unirte a la experiencia DRAUSSE!
+      </p>
+      <div class="bg-zinc-900 border border-zinc-800 p-4 rounded w-full text-left space-y-1">
+        <div class="flex justify-between text-xs font-bold text-zinc-400"><span>ID del Pedido:</span><span
+            class="text-white font-mono">#VTX-20260725</span></div>
+        <div class="flex justify-between text-xs font-bold text-zinc-400"><span>Total Simulado:</span><span
+            class="text-volt font-display" id="checkout-total">$0.00</span></div>
+      </div>
+      <button onclick="closeCheckoutModal()"
+        class="w-full bg-white text-black font-display font-bold py-3 text-xs uppercase tracking-widest hover:bg-volt transition-colors">
+        Seguir Comprando
+      </button>
+    </div>
+  </div>
+
+  <!-- WISHIFY TOAST NOTIFICATIONS -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Product data registry
+    const productsData = [
+      { id: 1, name: "DRAUSSE Heavy Oversize", price: 39.99, image: "assets/polo-oversize-front.png", category: "oversize", desc: "100% Algodón Pima Peruano • 240g" },
+      { id: 2, name: "Classic Pima Basic", price: 34.99, image: "assets/polo-basic-front.png", category: "basicos", desc: "100% Algodón Pima Peruano • Ajuste Regular" },
+      { id: 3, name: "Graphic Street Dark", price: 42.99, image: "assets/polo-graphic-front.png", category: "estampados", desc: "100% Algodón Pima Peruano • Arte Impreso" },
+      { id: 4, name: "Performance Slim Olive", price: 37.99, image: "assets/polo-slim-front.png", category: "slim", desc: "95% Algodón Pima / 5% Spandex • Athleisure" },
+      { id: 5, name: "DRAUSSE Oversize Charcoal", price: 39.99, image: "assets/polo-oversize-front.png", category: "oversize", desc: "100% Algodón Pima Peruano • Carbón Lavado" },
+      { id: 6, name: "Graphic Volt Active", price: 45.99, image: "assets/polo-graphic-front.png", category: "estampados", desc: "100% Algodón Pima Peruano • Neon Print" }
+    ];
+
+    // Global states
+    let cart = [];
+    let wishlist = [];
+    let selectedSizes = {}; // tracks selected sizes per product ID
+
+    // DOM References
+    const cartDrawer = document.getElementById('cart-drawer');
+    const searchModal = document.getElementById('search-modal');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const toastContainer = document.getElementById('toast-container');
+
+    // Init & Listeners
+    document.addEventListener("DOMContentLoaded", () => {
+      // Setup reveal animations
+      setupScrollReveal();
+
+      // Setup click listeners for drawers
+      document.getElementById('cart-btn').addEventListener('click', toggleCart);
+      document.getElementById('close-cart-btn').addEventListener('click', toggleCart);
+
+      document.getElementById('search-btn').addEventListener('click', toggleSearch);
+      document.getElementById('close-search-btn').addEventListener('click', toggleSearch);
+
+      document.getElementById('mobile-menu-btn').addEventListener('click', toggleMobileMenu);
+      document.getElementById('close-mobile-menu').addEventListener('click', toggleMobileMenu);
+
+      // Close drawers on pressing ESC key
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          cartDrawer.classList.add('translate-x-full');
+          searchModal.classList.add('-translate-y-full');
+          mobileMenu.classList.add('-translate-x-full');
+        }
+      });
+    });
+
+    // Toggle Mobile Menu
+    function toggleMobileMenu() {
+      mobileMenu.classList.toggle('-translate-x-full');
+    }
+
+    // Toggle Search drawer
+    function toggleSearch() {
+      searchModal.classList.toggle('-translate-y-full');
+      if (!searchModal.classList.contains('-translate-y-full')) {
+        setTimeout(() => document.getElementById('search-input').focus(), 300);
+      }
+    }
+
+    // Toggle Cart drawer
+    function toggleCart() {
+      cartDrawer.classList.toggle('translate-x-full');
+    }
+
+    // Filter Products logic
+    function filterProducts(category) {
+      const cards = document.querySelectorAll('.product-card');
+      const tabs = document.querySelectorAll('.filter-tab');
+
+      // Update active tab styling
+      tabs.forEach(tab => {
+        // Find which tab is active
+        const onclickAttr = tab.getAttribute('onclick');
+        if (onclickAttr.includes(`'${category}'`)) {
+          tab.className = "filter-tab active bg-volt text-black border border-volt px-6 py-2.5 font-display font-bold text-xs uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5";
+        } else {
+          tab.className = "filter-tab bg-transparent text-white border border-zinc-800 px-6 py-2.5 font-display font-bold text-xs uppercase tracking-wider transition-all duration-300 hover:border-white hover:text-white hover:-translate-y-0.5";
+        }
+      });
+
+      // Filter products visually
+      cards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        if (category === 'all' || cardCategory === category) {
+          card.style.display = 'flex';
+          card.classList.add('animate-fade-in');
+        } else {
+          card.style.display = 'none';
+          card.classList.remove('animate-fade-in');
+        }
+      });
+    }
+
+    // Handle selecting size inside product cards
+    function selectSize(element, productId) {
+      const parent = element.parentElement;
+      const buttons = parent.querySelectorAll('.size-btn');
+
+      // Toggle states
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-volt', 'text-black', 'border-volt');
+        btn.classList.add('border-zinc-700', 'text-zinc-300');
+      });
+
+      element.classList.remove('border-zinc-700', 'text-zinc-300');
+      element.classList.add('bg-volt', 'text-black', 'border-volt');
+
+      // Store size
+      selectedSizes[productId] = element.innerText;
+    }
+
+    // Reset size selectors inside card UI
+    function resetSizeSelector(productId) {
+      const cards = document.querySelectorAll('.product-card');
+      const card = cards[productId - 1]; // matching index roughly (for static HTML match)
+      if (card) {
+        const buttons = card.querySelectorAll('.size-btn');
+        buttons.forEach(btn => {
+          btn.classList.remove('bg-volt', 'text-black', 'border-volt');
+          btn.classList.add('border-zinc-700', 'text-zinc-300');
+        });
+      }
+      delete selectedSizes[productId];
+    }
+
+    // Add to cart drawer logic
+    function addToCart(productId, name, price, image) {
+      const size = selectedSizes[productId];
+
+      if (!size) {
+        showToast(`<i class="fa-solid fa-triangle-exclamation text-red-500"></i> Por favor selecciona una talla (S, M, L, XL) primero.`);
+        // Find product card image to shake it briefly to catch user's attention
+        const cards = document.querySelectorAll('.product-card');
+        const targetCard = Array.from(cards).find(c => c.innerHTML.includes(`'${name}'`));
+        if (targetCard) {
+          const imgContainer = targetCard.querySelector('.product-image-container');
+          imgContainer.classList.add('animate-pulse-soft');
+          setTimeout(() => imgContainer.classList.remove('animate-pulse-soft'), 600);
+        }
+        return;
+      }
+
+      // Check if item with this size is already in cart
+      const existingItem = cart.find(item => item.id === productId && item.size === size);
+
+      if (existingItem) {
+        existingItem.quantity += 1;
+      } else {
+        cart.push({
+          id: productId,
+          name: name,
+          price: price,
+          image: image,
+          size: size,
+          quantity: 1
+        });
+      }
+
+      // Update counters, interface & show Drawer
+      updateCartUI();
+      showToast(`<i class="fa-solid fa-circle-check text-volt"></i> ${name} (${size}) añadido al carrito.`);
+
+      // Open drawer automatically for micro-interaction
+      cartDrawer.classList.remove('translate-x-full');
+
+      // Reset card selection
+      resetSizeSelector(productId);
+    }
+
+    // Update Cart HTML and variables
+    function updateCartUI() {
+      const container = document.getElementById('cart-items-container');
+      const emptyMessage = document.getElementById('cart-empty-message');
+
+      // Count items and sum total
+      const totalItems = cart.reduce((acc, curr) => acc + curr.quantity, 0);
+      const subtotal = cart.reduce((acc, curr) => acc + (curr.price * curr.quantity), 0);
+
+      // Badge displays
+      const cartBadge = document.getElementById('cart-badge');
+      const cartCountDrawer = document.getElementById('cart-count-badge');
+
+      if (totalItems > 0) {
+        cartBadge.innerText = totalItems;
+        cartBadge.classList.remove('scale-0');
+        cartBadge.classList.add('scale-100');
+        emptyMessage.classList.add('hidden');
+      } else {
+        cartBadge.classList.remove('scale-100');
+        cartBadge.classList.add('scale-0');
+        emptyMessage.classList.remove('hidden');
+      }
+
+      document.getElementById('cart-count-drawer').innerText = `${totalItems} Items`;
+      document.getElementById('cart-subtotal').innerText = `$${subtotal.toFixed(2)}`;
+
+      // Free shipping progress tracking ($50 free shipping limit)
+      const limit = 50.00;
+      const diff = limit - subtotal;
+      const progressPercent = Math.min((subtotal / limit) * 100, 100);
+
+      const bar = document.getElementById('shipping-tracker-bar');
+      const trackerPercent = document.getElementById('shipping-tracker-percent');
+      const trackerTitle = document.getElementById('shipping-tracker-title');
+
+      bar.style.width = `${progressPercent}%`;
+      trackerPercent.innerText = `${Math.round(progressPercent)}%`;
+
+      if (diff > 0 && subtotal > 0) {
+        trackerTitle.innerHTML = `Faltan <span class="text-volt">$${diff.toFixed(2)}</span> para envío gratis`;
+        document.getElementById('cart-shipping-cost').innerText = 'Calculado en el checkout';
+      } else if (subtotal === 0) {
+        trackerTitle.innerText = `Faltan $50.00 para envío gratis`;
+        document.getElementById('cart-shipping-cost').innerText = 'Calculado en el checkout';
+      } else {
+        trackerTitle.innerHTML = `¡Felicidades! Tienes <span class="text-volt">Envío Gratis</span> asegurado`;
+        document.getElementById('cart-shipping-cost').innerText = '¡GRATIS!';
+        document.getElementById('cart-shipping-cost').classList.add('text-volt');
+      }
+
+      // Render items list
+      // Remove all elements except empty message
+      const renderedItems = container.querySelectorAll('.cart-item-row');
+      renderedItems.forEach(el => el.remove());
+
+      cart.forEach((item, index) => {
+        const row = document.createElement('div');
+        row.className = "cart-item-row flex items-center justify-between border-b border-zinc-900 pb-4 animate-fade-in";
+        row.innerHTML = `
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-20 bg-zinc-950 border border-zinc-900 overflow-hidden flex-shrink-0">
+              <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col">
+              <span class="font-display font-bold text-xs uppercase tracking-tight text-white">${item.name}</span>
+              <span class="text-[10px] text-zinc-500 font-bold uppercase mt-0.5">Talla: <span class="text-volt">${item.size}</span></span>
+              <div class="flex items-center gap-3 mt-2">
+                <button onclick="changeQuantity(${index}, -1)" class="w-6 h-6 border border-zinc-800 hover:border-white text-zinc-400 hover:text-white flex items-center justify-center text-xs focus:outline-none">-</button>
+                <span class="text-xs font-bold w-4 text-center">${item.quantity}</span>
+                <button onclick="changeQuantity(${index}, 1)" class="w-6 h-6 border border-zinc-800 hover:border-white text-zinc-400 hover:text-white flex items-center justify-center text-xs focus:outline-none">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-end justify-between h-20">
+            <button onclick="removeCartItem(${index})" class="text-zinc-600 hover:text-red-500 text-xs focus:outline-none">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+            <span class="font-display font-extrabold text-white text-sm">$${(item.price * item.quantity).toFixed(2)}</span>
+          </div>
+        `;
+        container.appendChild(row);
+      });
+    }
+
+    // Change item quantity in cart
+    function changeQuantity(index, modifier) {
+      cart[index].quantity += modifier;
+      if (cart[index].quantity <= 0) {
+        removeCartItem(index);
+      } else {
+        updateCartUI();
+      }
+    }
+
+    // Remove item from cart
+    function removeCartItem(index) {
+      const removed = cart.splice(index, 1);
+      updateCartUI();
+      showToast(`<i class="fa-solid fa-trash-can text-zinc-400"></i> ${removed[0].name} removido del carrito.`);
+    }
+
+    // Toggle Wishlist logic
+    function toggleWishlist(productId, btnElement, name) {
+      const idx = wishlist.indexOf(productId);
+      const icon = btnElement.querySelector('i');
+
+      if (idx > -1) {
+        // Remove from wishlist
+        wishlist.splice(idx, 1);
+        icon.className = "fa-regular fa-heart";
+        icon.classList.remove('text-red-500');
+        showToast(`<i class="fa-solid fa-heart-crack text-zinc-500"></i> Removido de Favoritos.`);
+      } else {
+        // Add to wishlist
+        wishlist.push(productId);
+        icon.className = "fa-solid fa-heart text-red-500 animate-pulse-soft";
+        showToast(`<i class="fa-solid fa-heart text-red-500"></i> ${name} añadido a Favoritos.`);
+      }
+
+      // Update wishlist count badge
+      const badge = document.getElementById('wishlist-badge');
+      if (wishlist.length > 0) {
+        badge.innerText = wishlist.length;
+        badge.classList.remove('scale-0');
+        badge.classList.add('scale-100');
+      } else {
+        badge.classList.remove('scale-100');
+        badge.classList.add('scale-0');
+      }
+    }
+
+    // Simulated Checkout Flow
+    function simulateCheckout() {
+      if (cart.length === 0) {
+        showToast(`<i class="fa-solid fa-triangle-exclamation text-yellow-500"></i> Añade productos para realizar el pago.`);
+        return;
+      }
+
+      const checkoutBtn = document.getElementById('checkout-btn');
+      const originalText = checkoutBtn.innerHTML;
+
+      // Playing loading spinner
+      checkoutBtn.disabled = true;
+      checkoutBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin text-sm"></i> PROCESANDO...`;
+
+      setTimeout(() => {
+        // Calculate final total
+        const subtotal = cart.reduce((acc, curr) => acc + (curr.price * curr.quantity), 0);
+        document.getElementById('checkout-total').innerText = `$${subtotal.toFixed(2)}`;
+
+        // Open checkout modal
+        document.getElementById('checkout-modal').classList.remove('hidden');
+
+        // Reset cart
+        cart = [];
+        updateCartUI();
+        toggleCart();
+
+        // Restore button state
+        checkoutBtn.disabled = false;
+        checkoutBtn.innerHTML = originalText;
+      }, 1500);
+    }
+
+    // Close checkout modal helper
+    function closeCheckoutModal() {
+      document.getElementById('checkout-modal').classList.add('hidden');
+    }
+
+    // Custom instant search engine
+    function handleSearch(query) {
+      const container = document.getElementById('search-results-list');
+
+      if (!query.trim()) {
+        container.innerHTML = `<p class="text-xs text-zinc-600">Escribe algo en la barra de búsqueda para ver resultados instantáneos...</p>`;
+        return;
+      }
+
+      // Filter products array by query
+      const filtered = productsData.filter(prod =>
+        prod.name.toLowerCase().includes(query.toLowerCase()) ||
+        prod.category.toLowerCase().includes(query.toLowerCase()) ||
+        prod.desc.toLowerCase().includes(query.toLowerCase())
+      );
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<p class="text-xs text-zinc-500">No encontramos resultados para "${query}". Intenta con "Oversize" o "Basic".</p>`;
+        return;
+      }
+
+      container.innerHTML = '';
+      filtered.forEach(prod => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = "flex items-center gap-3 p-2 bg-zinc-900 border border-zinc-800 hover:border-volt transition-colors cursor-pointer select-none";
+        itemDiv.innerHTML = `
+          <div class="w-10 h-12 bg-black overflow-hidden flex-shrink-0">
+            <img src="${prod.image}" alt="${prod.name}" class="w-full h-full object-cover">
+          </div>
+          <div class="flex-grow flex flex-col justify-center">
+            <span class="text-xs font-display font-bold uppercase text-white">${prod.name}</span>
+            <span class="text-[9px] text-zinc-500 uppercase">${prod.category} • $${prod.price}</span>
+          </div>
+        `;
+        // Quick trigger click to jump to section and close search
+        itemDiv.onclick = () => {
+          toggleSearch();
+          filterProducts(prod.category);
+          document.getElementById('productos').scrollIntoView({ behavior: 'smooth' });
+        };
+        container.appendChild(itemDiv);
+      });
+    }
+
+    // Auto set search value from click suggestions
+    function setSearchValue(val) {
+      const input = document.getElementById('search-input');
+      input.value = val;
+      handleSearch(val);
+    }
+
+    // Success subscription for newsletter
+    function handleNewsletterSubmit(e) {
+      e.preventDefault();
+      document.getElementById('newsletter-success').classList.remove('hidden');
+      e.target.reset();
+
+      // Auto hide success message after 5 seconds
+      setTimeout(() => {
+        document.getElementById('newsletter-success').classList.add('hidden');
+      }, 5000);
+    }
+
+    // Dynamic toast system helper
+    function showToast(messageHtml) {
+      const toast = document.createElement('div');
+      toast.className = "bg-zinc-950 text-white border border-zinc-800 px-5 py-3 text-xs font-bold uppercase tracking-wider flex items-center gap-3 shadow-2xl animate-fade-in pointer-events-auto min-w-[250px] border-l-4 border-l-volt";
+      toast.innerHTML = messageHtml;
+
+      toastContainer.appendChild(toast);
+
+      // Fade out and remove
+      setTimeout(() => {
+        toast.classList.add('opacity-0');
+        toast.style.transition = 'opacity 0.5s ease-out';
+        setTimeout(() => toast.remove(), 500);
+      }, 3500);
+    }
+
+    // Setup scroll reveal animation using IntersectionObserver
+    function setupScrollReveal() {
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, {
+        threshold: 0.15
+      });
+
+      reveals.forEach(el => observer.observe(el));
+    }
+  </script>
+</body>
+
+</html>

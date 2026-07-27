@@ -16,13 +16,13 @@
   <meta property="og:title" content="DRAUSSE | Polos Premium de Algodón Pima Peruano">
   <meta property="og:description"
     content="Diseño minimalista, comodidad extrema. Colección de polos premium fabricados con el mejor algodón Pima peruano.">
-  <meta property="og:image" content="assets/hero-banner.png">
+  <meta property="og:image" content="assets/polo-oversize-front.png">
   <meta property="og:url" content="https://AmElL-25.github.io/drausse-web/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="DRAUSSE | Polos Premium de Algodón Pima Peruano">
   <meta name="twitter:description"
     content="Diseño minimalista, comodidad extrema. Colección de polos premium fabricados con el mejor algodón Pima peruano.">
-  <meta name="twitter:image" content="assets/hero-banner.png">
+  <meta name="twitter:image" content="assets/polo-oversize-front.png">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -185,20 +185,8 @@
 
       <!-- LOGO -->
       <a href="#" class="flex items-center gap-2 group">
-        <svg class="w-8 h-8 text-white group-hover:text-volt transition-all duration-300" viewBox="0 0 100 100"
-          fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Hourglass top cup -->
-          <path d="M35 25 H65 L50 47 Z" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"
-            stroke-linecap="round" />
-          <!-- Hourglass bottom cup -->
-          <path d="M35 75 H65 L50 53 Z" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"
-            stroke-linecap="round" />
-          <!-- Diagonal arrow -->
-          <path d="M28 82 L72 18" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" />
-          <!-- Arrow tip -->
-          <path d="M58 18 H72 V32" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"
-            stroke-linecap="round" />
-        </svg>
+        <img src="assets/logo-icon-white-on-black.jpg" alt="DRAUSSE"
+          class="w-8 h-8 rounded-sm object-cover ring-1 ring-white/10 group-hover:ring-volt/50 transition-all duration-300">
         <span
           class="font-display font-black text-xl md:text-2xl tracking-tighter uppercase text-white group-hover:text-volt transition-colors duration-300">DRAUSSE</span>
       </a>
@@ -259,15 +247,8 @@
     <div>
       <div class="flex justify-between items-center mb-12">
         <div class="flex items-center gap-2">
-          <svg class="w-7 h-7 text-volt" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M35 25 H65 L50 47 Z" stroke="currentColor" stroke-width="5" stroke-linejoin="round"
-              stroke-linecap="round" />
-            <path d="M35 75 H65 L50 53 Z" stroke="currentColor" stroke-width="5" stroke-linejoin="round"
-              stroke-linecap="round" />
-            <path d="M28 82 L72 18" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
-            <path d="M58 18 H72 V32" stroke="currentColor" stroke-width="5" stroke-linejoin="round"
-              stroke-linecap="round" />
-          </svg>
+          <img src="assets/logo-icon-white-on-black.jpg" alt="DRAUSSE"
+            class="w-7 h-7 rounded-sm object-cover ring-1 ring-volt/40">
           <span class="font-display font-black text-2xl tracking-tighter text-volt">DRAUSSE</span>
         </div>
         <button id="close-mobile-menu" class="text-white hover:text-volt text-2xl focus:outline-none">
@@ -301,14 +282,18 @@
 
   <!-- HERO SECTION -->
   <section
-    class="relative h-[85vh] md:h-[90vh] flex items-center justify-start overflow-hidden bg-zinc-950 select-none">
-    <!-- Immersive Background Image -->
+    class="relative h-[85vh] md:h-[90vh] flex items-center justify-start overflow-hidden bg-black select-none">
+    <!-- Immersive Black Background with Cutout Athlete -->
     <div class="absolute inset-0 z-0">
-      <img src="assets/hero-banner.png" alt="DRAUSSE Hero Banner"
-        class="w-full h-full object-cover object-center opacity-70 md:opacity-85 transform scale-100 transition-transform duration-1000 ease-out"
+      <!-- Subtle volt glow behind the athlete -->
+      <div
+        class="absolute right-0 bottom-0 w-[60%] h-[80%] bg-volt/10 blur-[120px] rounded-full translate-x-1/4 translate-y-1/4">
+      </div>
+      <img src="assets/hero-athlete-cutout.png" alt="Atleta DRAUSSE"
+        class="absolute right-0 bottom-0 h-full md:h-[95%] w-auto max-w-none object-contain object-bottom opacity-95 transform scale-100 transition-transform duration-1000 ease-out"
         id="hero-img">
       <!-- Dark Gradients for Text Contrast -->
-      <div class="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
       <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
     </div>
 
@@ -342,23 +327,6 @@
             Comprar Mujer
           </a>
         </div>
-      </div>
-
-      <!-- Right: Large DRAUSSE Logo -->
-      <div class="hidden md:flex items-center justify-center hero-logo-float">
-        <svg class="w-48 lg:w-64 h-48 lg:h-64 text-white/15" viewBox="0 0 100 100" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M30 20 H70 L50 45 Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"
-            stroke-linecap="round" fill="currentColor" fill-opacity="0.05" />
-          <path d="M30 80 H70 L50 55 Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"
-            stroke-linecap="round" fill="currentColor" fill-opacity="0.05" />
-          <path d="M22 88 L78 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
-          <path d="M62 12 H78 V28" stroke="currentColor" stroke-width="3" stroke-linejoin="round"
-            stroke-linecap="round" />
-          <!-- Small feathered arrows on the diagonal -->
-          <path d="M18 78 L28 88" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-          <path d="M18 88 L28 78" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-        </svg>
       </div>
 
     </div>
@@ -436,8 +404,10 @@
         <div
           class="relative group overflow-hidden bg-zinc-900 aspect-[4/5] md:aspect-auto flex flex-col justify-end p-8 border border-zinc-100">
           <div class="absolute inset-0">
-            <img src="assets/polo-graphic-front.png" alt="Estampados Gráficos"
+            <img src="assets/polo-oversize-front.png" alt="Estampados Gráficos"
               class="w-full h-full object-cover object-center transform scale-100 group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-90">
+            <img src="assets/logo-icon-white-on-black.jpg" alt=""
+              class="absolute left-1/2 top-[38%] -translate-x-1/2 -translate-y-1/2 w-16 h-16 mix-blend-screen opacity-90 pointer-events-none">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
           </div>
           <div class="relative z-10">
@@ -643,18 +613,13 @@
               onclick="toggleWishlist(3, this, 'Polo Graphic Street Dark')">
               <i class="fa-regular fa-heart"></i>
             </button>
-            <img src="assets/polo-graphic-front.png" alt="Polo Graphic Street Dark"
+            <img src="assets/polo-oversize-front.png" alt="Polo Graphic Street Dark"
               class="product-img w-full h-full object-cover object-center absolute inset-0 transition-transform duration-500 z-0">
-            <img src="assets/polo-graphic-back.png" alt="Polo Graphic Street Dark Detalle"
+            <img src="assets/polo-oversize-back.png" alt="Polo Graphic Street Dark Detalle"
               class="product-img-hover w-full h-full object-cover object-center absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-0">
-            <svg class="polo-logo-watermark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M30 20 H70 L50 45 Z" stroke="white" stroke-width="4" stroke-linejoin="round"
-                stroke-linecap="round" />
-              <path d="M30 80 H70 L50 55 Z" stroke="white" stroke-width="4" stroke-linejoin="round"
-                stroke-linecap="round" />
-              <path d="M22 88 L78 12" stroke="white" stroke-width="4" stroke-linecap="round" />
-              <path d="M62 12 H78 V28" stroke="white" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
-            </svg>
+            <!-- DRAUSSE Logo Print on polo -->
+            <img src="assets/logo-icon-white-on-black.jpg" alt="Estampado DRAUSSE"
+              class="absolute left-1/2 top-[40%] -translate-x-1/2 -translate-y-1/2 w-20 h-20 mix-blend-screen opacity-90 z-[6] pointer-events-none">
 
             <div
               class="absolute inset-x-0 bottom-0 bg-black/80 backdrop-blur-sm border-t border-zinc-800 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20 flex flex-col items-center">
@@ -680,7 +645,7 @@
               </div>
               <span class="font-display font-extrabold text-volt text-lg">$42.99</span>
             </div>
-            <button onclick="addToCart(3, 'Graphic Street Dark', 42.99, 'assets/polo-graphic-front.png')"
+            <button onclick="addToCart(3, 'Graphic Street Dark', 42.99, 'assets/polo-oversize-front.png')"
               class="add-to-cart-btn mt-4 w-full bg-zinc-900 text-white hover:bg-volt hover:text-black font-display font-bold py-3 text-xs uppercase tracking-widest border border-zinc-800 hover:border-volt transition-colors flex items-center justify-center gap-2">
               <i class="fa-solid fa-plus text-xs"></i> Añadir al Carrito
             </button>
@@ -811,18 +776,13 @@
               onclick="toggleWishlist(6, this, 'Polo Graphic Volt Active')">
               <i class="fa-regular fa-heart"></i>
             </button>
-            <img src="assets/polo-graphic-front.png" alt="Polo Graphic Volt Active"
+            <img src="assets/polo-oversize-front.png" alt="Polo Graphic Volt Active"
               class="product-img w-full h-full object-cover object-center absolute inset-0 transition-transform duration-500 z-0 brightness-110">
-            <img src="assets/polo-graphic-back.png" alt="Polo Graphic Volt Active Detalle"
+            <img src="assets/polo-oversize-back.png" alt="Polo Graphic Volt Active Detalle"
               class="product-img-hover w-full h-full object-cover object-center absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-0 brightness-110">
-            <svg class="polo-logo-watermark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M30 20 H70 L50 45 Z" stroke="white" stroke-width="4" stroke-linejoin="round"
-                stroke-linecap="round" />
-              <path d="M30 80 H70 L50 55 Z" stroke="white" stroke-width="4" stroke-linejoin="round"
-                stroke-linecap="round" />
-              <path d="M22 88 L78 12" stroke="white" stroke-width="4" stroke-linecap="round" />
-              <path d="M62 12 H78 V28" stroke="white" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
-            </svg>
+            <!-- DRAUSSE Logo Print on polo -->
+            <img src="assets/logo-icon-white-on-black.jpg" alt="Estampado DRAUSSE"
+              class="absolute left-1/2 top-[40%] -translate-x-1/2 -translate-y-1/2 w-20 h-20 mix-blend-screen opacity-90 z-[6] pointer-events-none">
 
             <div
               class="absolute inset-x-0 bottom-0 bg-black/80 backdrop-blur-sm border-t border-zinc-800 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20 flex flex-col items-center">
@@ -848,7 +808,7 @@
               </div>
               <span class="font-display font-extrabold text-volt text-lg">$45.99</span>
             </div>
-            <button onclick="addToCart(6, 'Graphic Volt Active', 45.99, 'assets/polo-graphic-front.png')"
+            <button onclick="addToCart(6, 'Graphic Volt Active', 45.99, 'assets/polo-oversize-front.png')"
               class="add-to-cart-btn mt-4 w-full bg-zinc-900 text-white hover:bg-volt hover:text-black font-display font-bold py-3 text-xs uppercase tracking-widest border border-zinc-800 hover:border-volt transition-colors flex items-center justify-center gap-2">
               <i class="fa-solid fa-plus text-xs"></i> Añadir al Carrito
             </button>
@@ -908,6 +868,11 @@
                   stroke-linecap="round" />
               </svg>
             </div>
+          </div>
+          <!-- Brand logo badge -->
+          <div
+            class="absolute -top-6 -right-6 z-20 w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-black shadow-2xl ring-2 ring-volt/60">
+            <img src="assets/logo-full-brand-dark.jpg" alt="Logo DRAUSSE" class="w-full h-full object-cover">
           </div>
           <div class="absolute bottom-6 left-6 bg-black/90 backdrop-blur-sm border border-zinc-800 p-4 max-w-xs">
             <span class="text-volt font-display font-black text-xs tracking-widest uppercase">NUESTRA MISIÓN</span>
@@ -1017,16 +982,8 @@
       <!-- Footer Brand Info -->
       <div class="flex flex-col space-y-4">
         <a href="#" class="flex items-center gap-2 group">
-          <svg class="w-6 h-6 text-white group-hover:text-volt transition-all duration-300" viewBox="0 0 100 100"
-            fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M35 25 H65 L50 47 Z" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"
-              stroke-linecap="round" />
-            <path d="M35 75 H65 L50 53 Z" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"
-              stroke-linecap="round" />
-            <path d="M28 82 L72 18" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" />
-            <path d="M58 18 H72 V32" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"
-              stroke-linecap="round" />
-          </svg>
+          <img src="assets/logo-icon-white-on-black.jpg" alt="DRAUSSE"
+            class="w-6 h-6 rounded-sm object-cover ring-1 ring-white/10 group-hover:ring-volt/50 transition-all duration-300">
           <span
             class="font-display font-black text-xl text-white tracking-tighter uppercase group-hover:text-volt transition-colors duration-300">DRAUSSE</span>
         </a>
@@ -1245,10 +1202,10 @@
     const productsData = [
       { id: 1, name: "DRAUSSE Heavy Oversize", price: 39.99, image: "assets/polo-oversize-front.png", category: "oversize", desc: "100% Algodón Pima Peruano • 240g" },
       { id: 2, name: "Classic Pima Basic", price: 34.99, image: "assets/polo-basic-front.png", category: "basicos", desc: "100% Algodón Pima Peruano • Ajuste Regular" },
-      { id: 3, name: "Graphic Street Dark", price: 42.99, image: "assets/polo-graphic-front.png", category: "estampados", desc: "100% Algodón Pima Peruano • Arte Impreso" },
+      { id: 3, name: "Graphic Street Dark", price: 42.99, image: "assets/polo-oversize-front.png", category: "estampados", desc: "100% Algodón Pima Peruano • Arte Impreso" },
       { id: 4, name: "Performance Slim Olive", price: 37.99, image: "assets/polo-slim-front.png", category: "slim", desc: "95% Algodón Pima / 5% Spandex • Athleisure" },
       { id: 5, name: "DRAUSSE Oversize Charcoal", price: 39.99, image: "assets/polo-oversize-front.png", category: "oversize", desc: "100% Algodón Pima Peruano • Carbón Lavado" },
-      { id: 6, name: "Graphic Volt Active", price: 45.99, image: "assets/polo-graphic-front.png", category: "estampados", desc: "100% Algodón Pima Peruano • Neon Print" }
+      { id: 6, name: "Graphic Volt Active", price: 45.99, image: "assets/polo-oversize-front.png", category: "estampados", desc: "100% Algodón Pima Peruano • Neon Print" }
     ];
 
     // Global states
